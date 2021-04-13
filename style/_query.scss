@@ -1,0 +1,337 @@
+@media screen and (min-width:400px)  {
+    html {
+        font-size: 20px;
+    }
+    .menu {
+        padding-top: 10px;
+    }
+    input[type=checkbox]:checked~ul {
+        height: 268px;
+    }
+    .episodios {
+        min-height: 500px;
+        .audios {
+            min-height: 500px;
+            
+        }
+        .audio {
+            display: flex;
+            flex-flow: row wrap;
+            iframe {
+                width: 45%;
+                display: block;
+                margin: auto;
+                margin-bottom: -30px;
+                border: 0;
+                background-color: transparent;
+            }
+        }
+    }
+    .titulo {
+        padding-top: 94px;
+        h1 {
+            .titulo_inicio {
+                display: inline;
+            }
+        }
+        .btn_contenedor{
+            padding: 0 0 0 5%;
+            .btn{
+                display: inline-block;
+                padding: 16px 59px;
+            }
+        }
+    }
+    .somos {
+        min-height: 400px;
+        margin-top: 32px;
+        display: flex;
+        flex-flow: row wrap;
+        img {
+            width: 32%;
+            height: auto;
+        }
+        .txt{
+            width: 65%;
+            h2 {
+                margin-top: 48px;
+                margin-bottom: 8px;
+                span {
+                    display: inline-block;
+                }
+            }
+            
+        }
+    }
+    .entrevistas {
+        display: flex;
+        flex-flow: row wrap;
+        img {
+            width: 50%;
+            height: auto;
+            margin: 0;
+        }
+    }
+    .topicos {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 0;
+        padding: 0 5%;
+            h2 {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 55px;
+        }
+        div {
+            width: 25%;
+            margin-bottom: 32px;
+            img {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+    .novedades {
+        overflow: hidden;
+        position: relative;
+        min-height: 441px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        .btn_contenedor{
+            margin: 0 auto;
+            .btn{
+                display: inline-block;
+                padding: 16px 59px;
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        min-height: 100px;
+        height: 99px;
+        position: relative;
+        text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: space-between; 
+        -ms-flex-pack: space-between; 
+        justify-content: space-between;
+        align-items: center;
+        p {
+            width: 45%;
+            margin: 0;
+            display:inline-block;
+           
+        }
+        .social {
+            width: 45%;
+            margin: 0;
+            padding-right: 5%;
+            
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    h1{
+        font-size:52px;
+        line-height: 67px;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    h2{
+        font-size: 38px;
+        line-height: 49px;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    p {
+        font-size: 13px;
+        line-height: 20px;
+        padding-left: 14%;
+    }
+
+    .btn {
+        font-size: 14px;
+        line-height: 20px; 
+    }
+
+    header {
+        position: relative;
+        box-shadow: none;
+        padding-left: 7%;
+        img {
+            height: 29px;
+        }
+        nav {
+            ul {
+                height: 80px;
+                position: absolute;
+                top: 0;
+                right: 7%;
+                max-height: 100%;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                background: $colorTextoDos;
+                width: auto;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $colorTextoUno;
+                        font-family: $fontfamilyMono;
+                        font-size: 13px;
+                        line-height: 22px;
+                        padding: 16px;
+                    }
+                    a:hover{
+                        color:$colorDos;
+                    }
+                }  
+            }
+        }
+    }
+    .menu{
+        input {
+            display: none;
+        }
+        span {
+            display: none;
+        }
+    }         
+    .titulo {
+        p{
+            width: 60%;
+            padding: 0 0 0 14%;
+        }
+        .btn_contenedor{
+            padding: 0 0 0 14%;
+            display: block;
+        }
+    }
+    .episodios{
+        min-height: 700px;
+        .audios {
+            min-height: 700px;
+        }
+        .audio {
+            padding: 0 6%;
+            iframe {
+                width: 45%;
+                border: 0;
+                background-color: transparent;
+            }
+        }
+    }
+    .somos{
+        padding: 0 17% 0 14%;
+        img {
+            position: relative;
+            top: -64px;
+            margin-right: 56px;
+        }
+        .txt{
+            width: 55%;
+            h2 {
+                margin-bottom: 20px;
+                padding: 0;
+            }
+            p{
+                padding: 0;
+            }          
+        }
+    }
+    .entrevistas {
+        img {
+            width: 33.3333%;
+            height: auto;
+        }
+    }
+    .topicos {
+        padding: 0 14%;
+    }
+    footer {
+        min-height: 100px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        text-align: left;
+        p {
+            width: 45%;
+            margin: 0;
+            display:inline-block;
+            padding-left: 7%;
+        }
+        .social {
+            width: 30%;
+            margin: 0;
+            padding-right: 7%;
+        
+        }
+    }
+}
+
+
+@media screen and (min-width:1800px) {
+    body{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    p {
+        padding-left: 14%;
+    }
+    header {
+        margin-top: 16px;
+        min-width: 100px;
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .episodios {
+        min-height: 700px;
+        .audios {
+            position: absolute;
+            max-width: 60%;
+            margin: 0 auto;
+            min-height: 700px;
+        }
+    }
+    .somos {
+        img {
+            position: relative;
+            top: 0;
+        }
+        .txt{
+            align-self: center;        
+        }
+    }
+    .novedades {
+        min-height: 500px;
+        .novedad{
+            top: 17%;
+        }
+    }
+    footer {
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+}
